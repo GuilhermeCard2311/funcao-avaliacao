@@ -1,0 +1,18 @@
+{
+  "postagens": [
+    {
+      "id": "1",
+      "titulo": "Relato número 1",
+      "conteudo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "usuarioId": 1,
+      "comunidadeId": 1,
+      "anonimo": true,
+      "status": "aprovado",
+      "dataCriacao": "2026-04-19"
+    }
+  ],
+  "avaliacoes": [
+   
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,237 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-pink: #FE7BB2;
+  --nav-active: #9B5A79;
+  --nav-inactive: #FEB5D1;
+  --card-bg: #FDF0F5;
+  --text-dark: #9B5A79;
+  --text-author: #FE7BB2;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--bg-pink);
+  color: var(--text-dark);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- HEADER --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.brand-name {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-tab {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: var(--nav-inactive);
+}
+
+.nav-tab.active {
+  background-color: var(--nav-active);
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: var(--nav-inactive);
+  cursor: pointer;
+  display: flex;
+}
+.logout-btn svg { width: 28px; height: 28px; }
+
+/* --- GRID --- */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+}
+
+/* --- COMPOSER --- */
+.composer {
+  background: var(--card-bg);
+  padding: 15px 25px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.composer-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.composer-input::placeholder {
+  color: var(--nav-active);
+  opacity: 0.7;
+}
+
+.send-btn {
+  background: var(--nav-active);
+  color: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- CARD DE RELATO --- */
+.relato-card {
+  background: var(--card-bg);
+  border-radius: 40px;
+  padding: 40px;
+  margin-bottom: 25px;
+}
+
+.relato-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.relato-author {
+  color: var(--text-author);
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.relato-text {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* --- UPVOTE E UPDOWN --- */
+.vote-btn svg {
+    stroke: #666;
+}
+
+.vote-btn.upvote-ativo svg {
+    stroke: red;
+}
+
+.vote-btn.downvote-ativo svg {
+    stroke: blue;
+}
+
+.relato-actions {
+  display: flex;
+  align-items: center;
+}
+
+.vote-pill {
+  display: flex;
+  align-items: center;
+  background-color: #F4D3DF;
+  border-radius: 20px;
+  padding: 6px 14px;
+  gap: 12px;
+}
+
+.vote-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--text-dark);
+  transition: 0.2s;
+}
+
+.vote-btn svg {
+  width: 22px; 
+  height: 22px;
+  stroke-width: 3px;
+}
+
+.vote-btn:hover {
+  transform: scale(1.15);
+}
+
+.vote-count {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--text-dark);
+  min-width: 20px;
+  text-align: center;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 30px;
+  align-self: start;
+}
+
+.sidebar-title {
+  color: var(--text-dark);
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.community-item {
+  background: #F4D3DF;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+}
+.community-item span { font-size: 18px; }
+.community-item::after {
+  content: "Comunidade...";
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-top: 2px;
+}
