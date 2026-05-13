@@ -153,11 +153,11 @@ body {
 }
 
 .vote-btn.upvote-ativo svg {
-    stroke: red;
+    stroke: rgb(255, 0, 170);
 }
 
 .vote-btn.downvote-ativo svg {
-    stroke: blue;
+    stroke: rgb(255, 0, 255);
 }
 
 .relato-actions {
