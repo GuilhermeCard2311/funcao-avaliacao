@@ -1,4 +1,5 @@
 Rede Elas — Função avaliação
+
 Projeto simples de uma função de avaliação. A galera lê as histórias e pode dar Upvote (gostei) ou Downvote (não gostei).
 
 ⚙️ Como o código funciona?
