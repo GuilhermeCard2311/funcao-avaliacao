@@ -1,5 +1,5 @@
-const API_POSTS = '/api/postagens';
-const API_VOTOS = '/api/avaliacoes';
+const API_POSTS = 'http://localhost:3000/postagens';
+const API_VOTOS = 'http://localhost:3000/avaliacoes';
 
 const USUARIO_LOGADO_ID = 1; 
 
