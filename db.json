@@ -1,3 +1,4 @@
+
 {
   "postagens": [
     {
@@ -9,16 +10,6 @@
       "anonimo": true,
       "status": "aprovado",
       "dataCriacao": "2026-04-19"
-    },
-    {
-      "id": "2",
-      "titulo": "Relato número 2",
-      "conteudo": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-      "usuarioId": 2,
-      "comunidadeId": 1,
-      "anonimo": false,
-      "status": "aprovado",
-      "dataCriacao": "2026-05-15"
     }
   ],
   "avaliacoes": [],
